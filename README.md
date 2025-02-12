@@ -30,7 +30,7 @@ Once everything is set up, you're ready to run the bot:
 
 1. **In the terminal**, run the following command to start the bot:
     ```bash
-    npm run dev
+    npm start
     ```
 
 2. **Profit!** 🎉
