@@ -103,22 +103,9 @@ const fetchPools = async(tokenAddress) => {
     }
 };
 
-import { createClient } from 'redis';
+await dexSwap.connect();
 
-const client = createClient({
-    username: 'default',
-    password: 'PSXQJenSmEEGBaeYmvKLzQWSvDmHla2Z',
-    socket: {
-        host: 'redis-19251.c276.us-east-1-2.ec2.redns.redis-cloud.com',
-        port: 19251
-    }
-});
-
-client.on('error', err => console.log('Redis Client Error', err));
-
-await client.connect();
-
-await client.set(`Jupiter_${tokenPool}`, tokenPool);
+await dexSwap.set(`Jupiter_${tokenPool}`, tokenPool);
 
 const filterPools = (pools) => {
     return pools.filter((pool) => {
