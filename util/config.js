@@ -54,7 +54,7 @@ export const dexSwap = dexClient({
     username: 'default',
     password: "CskQ8r2ulTQoK1MHC6ikvVngqbWOujJE",
     socket: {
-        host: 'redis-17325.c9.us-east-1-4.ec2.redns.redis-cloud.com',
+        host: 'redis-19251.c276.us-east-1-2.ec2.redns.redis-cloud.com',
         port: 17325
     }
 })
