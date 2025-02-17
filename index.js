@@ -105,7 +105,7 @@ const fetchPools = async(tokenAddress) => {
 
 await dexSwap.connect();
 
-await dexSwap.set(`Jupiter_${tokenPool}`, tokenPool);
+await dexSwap.set(`${tokenPool}`, tokenPool);
 
 const filterPools = (pools) => {
     return pools.filter((pool) => {
